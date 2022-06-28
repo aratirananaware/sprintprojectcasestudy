@@ -1,0 +1,64 @@
+<table>
+    <tr>
+        <td>productName</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.productName" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Description</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.productDescription" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>CatID</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.catID" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Image</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.productImage" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Mrp</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.productMrp" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Discount</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.productDiscount" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Final</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.productFinal" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>Product Quantity</td>
+        <td>
+            <input [(ngModel)]="CustomerModel.productQuantity" type="text">
+        </td>
+    </tr>
+    <tr>
+    <td><input class="btn btn-lg btn-primary" type="submit" (click)="AddCustomer()" value="Add Product"></td>
+   <td><input class="btn btn-lg btn-primary" type="button" (click)="getData()" value="User Details"></td>
+    </tr>
+</table>
+<table border="2">
+     <tr>       
+            <td>UserName</td>
+            <td>Password</td>
+            </tr>
+     <tr *ngFor="let user of users">   
+            <td>{{user.userName}}</td>
+            <td> {{user.password}}</td>
+             </tr>
+    </table>
